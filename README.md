@@ -14,7 +14,7 @@ What is wrong with [official mycroft skill](https://github.com/MycroftAI/skill-s
   
 This skill uses padatious instead of adapt, this take the full utterance 
 into account. It is also a fallback skill and will revert to the old 
-behaviour if no other matches. 
+behaviour if no other skill matches. 
 
 NOTE: This conflicts with and blacklists the official skill!
 
