@@ -27,7 +27,7 @@ class StopSkill(FallbackSkill):
     def handle_fallback(self, message):
         utterance = message.data.get("utterance", "")
         if self.voc_match(utterance, 'StopKeyword'):
-            self.emitter.emit(message.reply("mycroft.stop", {}))
+            self.bus.emit(message.reply("mycroft.stop", {}))
             return True
         return False
 
