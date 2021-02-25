@@ -1,6 +1,8 @@
 # <img src='https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/stop-circle.svg' card_color='#40DBB0' width='50' height='50' style='vertical-align:bottom'/> Better Stop
 Stop mycroft by voice
 
+![](./logo.png)
+
 ## About
 Provides verbal interfaces for the "Stop" command. 
 
