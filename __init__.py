@@ -9,15 +9,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from ovos_utils.skills import blacklist_skill
 from mycroft.skills.core import FallbackSkill, intent_handler
 
 
 class StopSkill(FallbackSkill):
 
     def initialize(self):
-        # blacklist conflicting skills
-        blacklist_skill("mycroft-stop.mycroftai")
         self.register_fallback(self.handle_fallback, 80)
 
     @intent_handler("stop.intent")
