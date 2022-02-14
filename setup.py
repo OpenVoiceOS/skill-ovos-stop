@@ -25,8 +25,6 @@ setup(
     packages=['ovos_plugin_skill_stop'],
     package_data={'ovos_plugin_skill_stop': ['locale/*', 'vocab/*', "dialog/*"]},
     include_package_data=True,
-
-    install_requires=["ovos-plugin-manager>=0.0.2"],
     keywords='ovos mycroft skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
