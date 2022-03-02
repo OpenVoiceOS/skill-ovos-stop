@@ -22,7 +22,7 @@ allow_unknown = False
 allow_unlicense = True
 allow_ambiguous = False
 
-pkg_name = "ovos-plugin-skill-stop"
+pkg_name = "ovos-skill-stop"
 
 
 class TestLicensing(unittest.TestCase):
