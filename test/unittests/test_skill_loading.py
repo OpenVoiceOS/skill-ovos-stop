@@ -3,7 +3,7 @@ import unittest
 from os.path import dirname
 
 from mycroft.skills.skill_loader import PluginSkillLoader, SkillLoader
-from ovos_skill_stop import StopSkill, create_skill
+from skill_ovos_stop import StopSkill, create_skill
 
 from ovos_plugin_manager.skills import find_skill_plugins
 from ovos_utils.messagebus import FakeBus
