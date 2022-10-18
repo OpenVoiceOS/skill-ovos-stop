@@ -1,21 +1,21 @@
 {
-  "name": "Better Stop",
-  "skillname": "skill-better-stop",
-  "authorname": "JarbasSkills",
-  "foldername": "",
-  "url": "https://github.com/JarbasSkills/skill-better-stop",
-  "branch": "v0.2",
-  "desktopFile": false,
-  "warning": "",
-  "systemDeps": false,
-  "platforms": [
-    "arm",
-    "arm64",
-    "i386",
-    "x86_64",
-    "ia64"
-  ],
-  "examples": [
-    "stop"
-  ]
+    "name": "Better Stop",
+    "skillname": "skill-better-stop",
+    "authorname": "JarbasSkills",
+    "foldername": "",
+    "url": "https://github.com/JarbasSkills/skill-better-stop",
+    "branch": "dev",
+    "desktopFile": false,
+    "warning": "",
+    "systemDeps": false,
+    "platforms": [
+        "arm",
+        "arm64",
+        "i386",
+        "x86_64",
+        "ia64"
+    ],
+    "examples": [
+        "stop"
+    ]
 }
