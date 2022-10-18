@@ -1,12 +1,14 @@
-# write your first unittest!
 import unittest
-from os.path import dirname
+from os.path import join, dirname
+import os
+from ovos_utils.bracket_expansion import expand_parentheses, expand_options
 
-from mycroft.skills.skill_loader import PluginSkillLoader, SkillLoader
-from skill_ovos_stop import StopSkill, create_skill
-
+from adapt.engine import IntentDeterminationEngine
+from adapt.intent import IntentBuilder
+from skill_ovos_stop import  StopSkill, create_skill
 from ovos_plugin_manager.skills import find_skill_plugins
 from ovos_utils.messagebus import FakeBus
+from mycroft.skills.skill_loader import PluginSkillLoader, SkillLoader
 
 
 class TestSkillLoading(unittest.TestCase):
