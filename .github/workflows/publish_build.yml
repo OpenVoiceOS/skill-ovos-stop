@@ -19,17 +19,10 @@ jobs:
       - name: Install Build Tools
         run: |
           python -m pip install build wheel
-      - name: Install OSM
-        run: |
-          pip install ovos-skills-manager~=0.0.10
       - name: Remove alpha (declare stable)
         run: |
           VER=$(python setup.py --version)
           python scripts/remove_alpha.py
-      - name: Prepare Skillstore metadata
-        run: |
-          python scripts/prepare_skillstore.py
-          python scripts/release_skillstore.py
       - name: "Generate release changelog"
         uses: heinrichreimer/github-changelog-generator-action@v2.3
         with:
@@ -62,6 +55,7 @@ jobs:
             ${{ steps.changelog.outputs.changelog }}
           draft: false
           prerelease: false
+          commitish: dev
       - name: Build Distribution Packages
         run: |
           python setup.py bdist_wheel
@@ -77,7 +71,16 @@ jobs:
         with:
           commit_message: Prepare Next Version
           branch: dev
-      - name: Publish to Test PyPI
-        uses: pypa/gh-action-pypi-publish@master
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
         with:
           password: ${{secrets.PYPI_TOKEN}}
+      - name: Send message to Matrix bots channel
+        id: matrix-chat-message
+        uses: fadenb/matrix-chat-message@v0.0.6
+        with:
+          homeserver: 'matrix.org'
+          token: ${{ secrets.MATRIX_TOKEN }}
+          channel: '!WjxEKjjINpyBRPFgxl:krbel.duckdns.org'
+          message: |
+            New skill-ovos-stop release! ${{ steps.version.outputs.version }}
