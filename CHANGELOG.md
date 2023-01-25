@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.0.2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.0.2a1...HEAD)
+
+**Merged pull requests:**
+
+- Add `long_description_content_type` to support parsed README.md [\#8](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/8) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.2a1](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.0.2a1) (2023-01-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.0.2...V0.0.2a1)
 
 **Merged pull requests:**
 
