@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/v0.2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.0.2...HEAD)
+
+**Merged pull requests:**
+
+- Update GH actions and version file to support automation [\#7](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/7) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.2](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.0.2) (2022-10-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/v0.2...V0.0.2)
 
 **Merged pull requests:**
 
