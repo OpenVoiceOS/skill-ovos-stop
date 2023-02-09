@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.0.2a2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.2.0...HEAD)
+
+**Merged pull requests:**
+
+- feat/runtime\_requirements [\#10](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.2.0](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.2.0) (2023-01-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.0.2a2...V0.2.0)
 
 **Merged pull requests:**
 
