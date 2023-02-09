@@ -10,12 +10,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from mycroft.skills.core import FallbackSkill, intent_handler
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_utils import classproperty
 
 
 class StopSkill(FallbackSkill):
 
     def initialize(self):
         self.register_fallback(self.handle_fallback, 80)
+
+    @classproperty
+    def runtime_requirements(self):
+        return RuntimeRequirements(internet_before_load=False,
+                                   network_before_load=False,
+                                   gui_before_load=False,
+                                   requires_internet=False,
+                                   requires_network=False,
+                                   requires_gui=False,
+                                   no_internet_fallback=True,
+                                   no_network_fallback=True,
+                                   no_gui_fallback=True)
 
     @intent_handler("stop.intent")
     def handle_stop(self, message):
