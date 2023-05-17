@@ -9,9 +9,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from mycroft.skills.core import FallbackSkill, intent_handler
-from ovos_utils.process_utils import RuntimeRequirements
 from ovos_utils import classproperty
+from ovos_utils.process_utils import RuntimeRequirements
+from ovos_workshop.decorators import intent_handler
+from ovos_workshop.skills.fallback import FallbackSkill
 
 
 class StopSkill(FallbackSkill):
@@ -41,7 +42,3 @@ class StopSkill(FallbackSkill):
             self.bus.emit(message.reply("mycroft.stop", {}))
             return True
         return False
-
-
-def create_skill():
-    return StopSkill()
