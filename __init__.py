@@ -11,14 +11,11 @@
 # limitations under the License.
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
-from ovos_workshop.decorators import intent_handler
+from ovos_workshop.decorators import fallback_handler, intent_handler
 from ovos_workshop.skills.fallback import FallbackSkill
 
 
 class StopSkill(FallbackSkill):
-
-    def initialize(self):
-        self.register_fallback(self.handle_fallback, 80)
 
     @classproperty
     def runtime_requirements(self):
@@ -36,6 +33,15 @@ class StopSkill(FallbackSkill):
     def handle_stop(self, message):
         self.bus.emit(message.reply("mycroft.stop", {}))
 
+    @intent_handler("global_stop.intent")
+    def handle_global_stop(self, message):
+        # TODO - implement the "different stops" in core
+        # - go trough TTS -> active skill list -> global stop (current behavior)
+        # try to stop by order until one does (this allows to for eg, stop wikipedia + keep music playing in background)
+        # self.bus.emit(message.reply("mycroft.stop.global", {}))
+        self.bus.emit(message.reply("mycroft.stop", {}))
+
+    @fallback_handler(priority=80)
     def handle_fallback(self, message):
         utterance = message.data.get("utterance", "")
         if self.voc_match(utterance, 'StopKeyword'):
