@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.2.1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.3.0a1...HEAD)
+
+**Merged pull requests:**
+
+- \[locale/fr\] Fix French translation [\#15](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/15) ([goldyfruit](https://github.com/goldyfruit))
+
+## [V0.3.0a1](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.3.0a1) (2023-06-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.2.1...V0.3.0a1)
 
 **Fixed bugs:**
 
