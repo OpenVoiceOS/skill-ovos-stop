@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.2.1...HEAD)
+
+**Fixed bugs:**
+
+- Skill doesn't load on ovos-core 0.0.7 [\#12](https://github.com/OpenVoiceOS/skill-ovos-stop/issues/12)
+
+**Merged pull requests:**
+
+- Added Dutch and Flemish translations [\#14](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/14) ([Vistaus](https://github.com/Vistaus))
+
+## [V0.2.1](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.2.1) (2023-03-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.2.1a2...V0.2.1)
+
 ## [V0.2.1a2](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.2.1a2) (2023-03-03)
 
 [Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.2.1a1...V0.2.1a2)
