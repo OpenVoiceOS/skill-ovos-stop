@@ -2,7 +2,7 @@
 import unittest
 from os.path import join, dirname
 import os
-from ovos_utils.bracket_expansion import expand_parentheses, expand_options
+from ovos_utils.bracket_expansion import expand_options
 
 from adapt.engine import IntentDeterminationEngine
 from adapt.intent import IntentBuilder
