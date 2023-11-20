@@ -2,7 +2,16 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.3.0a4...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.3.0a5...HEAD)
+
+**Implemented enhancements:**
+
+- Add uk-ua [\#21](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/21) ([NeonDmitry](https://github.com/NeonDmitry))
+- clean tests, import from workshop [\#19](https://github.com/OpenVoiceOS/skill-ovos-stop/pull/19) ([emphasize](https://github.com/emphasize))
+
+## [V0.3.0a5](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.3.0a5) (2023-10-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.3.0a4...V0.3.0a5)
 
 **Implemented enhancements:**
 
