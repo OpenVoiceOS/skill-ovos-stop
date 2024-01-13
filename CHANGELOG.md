@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/HEAD)
+## [V0.3.0a8](https://github.com/OpenVoiceOS/skill-ovos-stop/tree/V0.3.0a8) (2023-12-30)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.3.0a7...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-stop/compare/V0.3.0a7...V0.3.0a8)
 
 **Merged pull requests:**
 
